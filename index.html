@@ -181,28 +181,44 @@
         </div>
     </div>
 
-    <div class="contact-section">
-        <div>
-            <img src="" alt="">
+    <div class="contact-section my-[10%] lg:my-[5%] flex lg:flex-row flex-col">
+        <div class="w-full lg:py-[2.4rem] lg:w-[45%]">
+            <img class="w-full" src="images/contact-video.png" alt="">
         </div>
-        <div>
-            <p></p>
-            <div>
-                <div>
-                    <div>
-                        <label for="name">Name</label>
-                        <input id="name" type="text">
+        <div class="flex-1 text-white  p-[6%] bg-[url('images/contact-bg.png')] bg-cover bg-no-repeat flex items-center justify-between gap-y-[3rem] flex-col">
+            <p class="capitalize text-center md:text-4xl text-3xl xl:text-5xl">ready to glow with us</p>
+            <div class="w-full flex flex-col gap-y-[2rem]">
+                <div class="flex flex-1 gap-[2rem] flex-col md:flex-row">
+                    <div class="flex w-full">
+                        <input autocomplete="off" class="peer w-full text-xl py-[0.5rem] px-[0.2rem] text-white outline-0 border-b-2 " id="name" placeholder="Name" type="text">
                     </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input id="email" type="text">
+                    <div class="flex  w-full">
+                        <input autocomplete="off" class="w-full text-xl py-[0.5rem] px-[0.2rem] bg-transparent  border-b-2 outline-0 " id="email" placeholder="Email" type="email">
                     </div>
                 </div>
-                <div></div>
+                <div class="flex flex-1 flex-col md:flex-row gap-[2rem]">
+                    <div class="flex flex-col w-full gap-y-2">
+                        <select class="text-xl py-[0.5rem] px-[0.2rem] cursor-pointer  outline-0 border-b-2 border-white" name="date" id="date">
+                            <option selected disabled value="">Date Appointment</option>
+                            <option class="text-black " value="">Today</option>
+                            <option class="text-black " value="">Tommorow</option>
+                            <option class="text-black " value="">Day After Tommorow</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col w-full gap-y-2">
+                        
+                        <select class="text-xl py-[0.5rem] px-[0.2rem]  outline-0 border-b-2 " name="services" id="services">
+                            <option   selected disabled value="">Type of Service</option>
+                            <option class="text-black "  value="">Book a Doctor</option>
+                            <option class="text-black "  value="">Get a Nurse</option>
+                            <option class="text-black "  value="">Regular Checkup</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="flex items-center justify-between gap-[1rem] cursor-pointer px-[0.6rem] py-[0.3rem] border-b-2 group">
                 <p>BOOK NOW</p>
-                <i class="fa-solid fa-chevron-right group-hover:pl-[0.7rem] duration-150"></i>
+                <i class="fa-solid  fa-chevron-right group-hover:pl-[0.7rem] duration-150"></i>
             </div>
         </div>
     </div>
