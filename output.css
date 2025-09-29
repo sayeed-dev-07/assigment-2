@@ -239,14 +239,44 @@
   .table {
     display: table;
   }
+  .h-\[0\.0\] {
+    height: 0.0;
+  }
   .h-\[0\.1rem\] {
     height: 0.1rem;
+  }
+  .h-\[0\.02\] {
+    height: 0.02;
+  }
+  .h-\[0\.02r\] {
+    height: 0.02r;
+  }
+  .h-\[0\.02re\] {
+    height: 0.02re;
+  }
+  .h-\[0\.02rem\] {
+    height: 0.02rem;
   }
   .h-\[0\.04rem\] {
     height: 0.04rem;
   }
+  .h-\[0\.05rem\] {
+    height: 0.05rem;
+  }
+  .h-\[0\.\] {
+    height: 0.;
+  }
+  .h-\[0\] {
+    height: 0;
+  }
+  .h-\[01rem\] {
+    height: 01rem;
+  }
   .h-\[1\.2rem\] {
     height: 1.2rem;
+  }
+  .h-\[1rem\] {
+    height: 1rem;
   }
   .h-\[2px\] {
     height: 2px;
@@ -262,6 +292,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .w-0 {
+    width: calc(var(--spacing) * 0);
   }
   .w-\[0\.1rem\] {
     width: 0.1rem;
@@ -406,6 +439,10 @@
   .border-4 {
     border-style: var(--tw-border-style);
     border-width: 4px;
+  }
+  .border-b-0 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 0px;
   }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
@@ -628,6 +665,10 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
   .duration-150 {
     --tw-duration: 150ms;
     transition-duration: 150ms;
@@ -672,6 +713,13 @@
       }
     }
   }
+  .hover\:w-full {
+    &:hover {
+      @media (hover: hover) {
+        width: 100%;
+      }
+    }
+  }
   .hover\:-translate-y-2 {
     &:hover {
       @media (hover: hover) {
@@ -697,6 +745,14 @@
       }
     }
   }
+  .hover\:border-b-2 {
+    &:hover {
+      @media (hover: hover) {
+        border-bottom-style: var(--tw-border-style);
+        border-bottom-width: 2px;
+      }
+    }
+  }
   .hover\:bg-black {
     &:hover {
       @media (hover: hover) {
@@ -708,6 +764,14 @@
     &:hover {
       @media (hover: hover) {
         padding-left: 1.2rem;
+      }
+    }
+  }
+  .hover\:font-medium {
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
       }
     }
   }
