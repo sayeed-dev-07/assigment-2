@@ -239,44 +239,14 @@
   .table {
     display: table;
   }
-  .h-\[0\.0\] {
-    height: 0.0;
-  }
   .h-\[0\.1rem\] {
     height: 0.1rem;
-  }
-  .h-\[0\.02\] {
-    height: 0.02;
-  }
-  .h-\[0\.02r\] {
-    height: 0.02r;
-  }
-  .h-\[0\.02re\] {
-    height: 0.02re;
-  }
-  .h-\[0\.02rem\] {
-    height: 0.02rem;
   }
   .h-\[0\.04rem\] {
     height: 0.04rem;
   }
-  .h-\[0\.05rem\] {
-    height: 0.05rem;
-  }
-  .h-\[0\.\] {
-    height: 0.;
-  }
-  .h-\[0\] {
-    height: 0;
-  }
-  .h-\[01rem\] {
-    height: 01rem;
-  }
   .h-\[1\.2rem\] {
     height: 1.2rem;
-  }
-  .h-\[1rem\] {
-    height: 1rem;
   }
   .h-\[2px\] {
     height: 2px;
@@ -302,8 +272,14 @@
   .w-\[0\] {
     width: 0;
   }
+  .w-\[1\] {
+    width: 1;
+  }
   .w-\[4rem\] {
     width: 4rem;
+  }
+  .w-\[10\] {
+    width: 10;
   }
   .w-\[30\%\] {
     width: 30%;
@@ -311,11 +287,29 @@
   .w-\[40\%\] {
     width: 40%;
   }
+  .w-\[60px\] {
+    width: 60px;
+  }
   .w-\[70\%\] {
     width: 70%;
   }
+  .w-\[70px\] {
+    width: 70px;
+  }
+  .w-\[100\] {
+    width: 100;
+  }
+  .w-\[100p\] {
+    width: 100p;
+  }
+  .w-\[100px\] {
+    width: 100px;
+  }
   .w-\[120px\] {
     width: 120px;
+  }
+  .w-\[160px\] {
+    width: 160px;
   }
   .w-\[200px\] {
     width: 200px;
@@ -325,6 +319,9 @@
   }
   .w-\[550px\] {
     width: 550px;
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;
@@ -439,10 +436,6 @@
   .border-4 {
     border-style: var(--tw-border-style);
     border-width: 4px;
-  }
-  .border-b-0 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 0px;
   }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
@@ -665,10 +658,6 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .duration-100 {
-    --tw-duration: 100ms;
-    transition-duration: 100ms;
-  }
   .duration-150 {
     --tw-duration: 150ms;
     transition-duration: 150ms;
@@ -713,13 +702,6 @@
       }
     }
   }
-  .hover\:w-full {
-    &:hover {
-      @media (hover: hover) {
-        width: 100%;
-      }
-    }
-  }
   .hover\:-translate-y-2 {
     &:hover {
       @media (hover: hover) {
@@ -738,18 +720,31 @@
       }
     }
   }
+  .hover\:rotate-1 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 1deg;
+      }
+    }
+  }
+  .hover\:rotate-18 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 18deg;
+      }
+    }
+  }
+  .hover\:rotate-180 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 180deg;
+      }
+    }
+  }
   .hover\:rotate-360 {
     &:hover {
       @media (hover: hover) {
         rotate: 360deg;
-      }
-    }
-  }
-  .hover\:border-b-2 {
-    &:hover {
-      @media (hover: hover) {
-        border-bottom-style: var(--tw-border-style);
-        border-bottom-width: 2px;
       }
     }
   }
@@ -764,14 +759,6 @@
     &:hover {
       @media (hover: hover) {
         padding-left: 1.2rem;
-      }
-    }
-  }
-  .hover\:font-medium {
-    &:hover {
-      @media (hover: hover) {
-        --tw-font-weight: var(--font-weight-medium);
-        font-weight: var(--font-weight-medium);
       }
     }
   }
@@ -822,11 +809,6 @@
       display: block;
     }
   }
-  .md\:w-\[40\%\] {
-    @media (width >= 48rem) {
-      width: 40%;
-    }
-  }
   .md\:w-\[50\%\] {
     @media (width >= 48rem) {
       width: 50%;
@@ -835,6 +817,11 @@
   .md\:w-\[70\%\] {
     @media (width >= 48rem) {
       width: 70%;
+    }
+  }
+  .md\:w-auto {
+    @media (width >= 48rem) {
+      width: auto;
     }
   }
   .md\:grid-cols-2 {
@@ -877,19 +864,9 @@
       padding-block: 5%;
     }
   }
-  .md\:py-\[10\%\] {
-    @media (width >= 48rem) {
-      padding-block: 10%;
-    }
-  }
   .md\:pr-0 {
     @media (width >= 48rem) {
       padding-right: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:pl-\[7\%\] {
-    @media (width >= 48rem) {
-      padding-left: 7%;
     }
   }
   .md\:text-4xl {
@@ -943,16 +920,6 @@
       height: 80%;
     }
   }
-  .lg\:w-\[1\%\] {
-    @media (width >= 64rem) {
-      width: 1%;
-    }
-  }
-  .lg\:w-\[10\%\] {
-    @media (width >= 64rem) {
-      width: 10%;
-    }
-  }
   .lg\:w-\[40\%\] {
     @media (width >= 64rem) {
       width: 40%;
@@ -966,16 +933,6 @@
   .lg\:w-\[65\%\] {
     @media (width >= 64rem) {
       width: 65%;
-    }
-  }
-  .lg\:w-\[85\%\] {
-    @media (width >= 64rem) {
-      width: 85%;
-    }
-  }
-  .lg\:w-\[100\%\] {
-    @media (width >= 64rem) {
-      width: 100%;
     }
   }
   .lg\:grid-cols-3 {
